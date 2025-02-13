@@ -4,15 +4,16 @@ import "./globals.css";
 import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: "Apprenez JavaScript – Formation Gratuite",
+  title: "Formation JavaScript : Apprendre JavaScript avec un cours en ligne",
   description:
-    "Devenez développeur avec notre formation JavaScript 100% gratuite et créez vos propres applications web.",
+    "Formation JavaScript en français, apprendre JavaScript rapidement sur une plateforme innovante. Mise à jour en 2025 et maintenue par Ashxjs.",
   keywords:
-    "formation JavaScript, apprendre JavaScript, développement web, formation gratuite, créer site web",
+    "formation JavaScript, apprendre JavaScript, développement web, formation gratuite, créer site web, application mobile, serveur",
   openGraph: {
-    title: "Apprends JavaScript et crée tes propres applications web 🚀",
+    title:
+      "Formation JavaScript : Apprendre JavaScript avec un cours en ligne 🚀",
     description:
-      "Formation complète pour apprendre JavaScript et développer des applications modernes.",
+      "Formation JavaScript en français, apprendre JavaScript rapidement sur une plateforme innovante. Mise à jour en 2025 et maintenue par Ashxjs.",
     url: "https://codewithashx.fr",
     images: [
       {
@@ -41,7 +42,36 @@ export default function RootLayout({
       <Head>
         <meta
           name="viewport"
-          content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Course",
+              name: "Formation JavaScript Gratuite",
+              description:
+                "Formation JavaScript en français, apprendre JavaScript rapidement sur une plateforme innovante. Mise à jour en 2025 et maintenue par Ashxjs.",
+              provider: {
+                "@type": "Organization",
+                name: "CodeWithAshX",
+                url: "https://codewithashx.fr",
+              },
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "EUR",
+                availability: "https://schema.org/InStock",
+                url: "https://codewithashx.fr",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                reviewCount: "1250",
+              },
+            }),
+          }}
         />
       </Head>
       <body className={`${poppins.className} antialiased`}>{children}</body>

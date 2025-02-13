@@ -102,7 +102,7 @@ export const Content = () => {
   return (
     <section
       id="content"
-      className="py-20 flex flex-col items-center justify-center"
+      className="py-20 p-5 flex flex-col items-center justify-center"
     >
       <h2 className="pt-3 text-3xl font-bold text-center md:pt-0">
         Contenu de la formation

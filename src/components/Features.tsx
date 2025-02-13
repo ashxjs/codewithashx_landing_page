@@ -25,10 +25,10 @@ export default function Features() {
       id="formation"
       className="py-20 flex flex-col items-center justify-center"
     >
-      <h2 className="pt-3 text-3xl font-bold text-center md:pt-0">
+      <h2 className="pt-3 text-2xl font-bold text-center md:pt-0 xs:text-3xl">
         Pourquoi choisir cette formation ?
       </h2>
-      <p className="text-lg text-gray-600 mt-2 text-center">
+      <p className="text-sm text-gray-600 mt-2 text-center xs:text-lg">
         Un apprentissage structuré et accessible à tous.
       </p>
 
