@@ -19,3 +19,60 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.bg-dot-pattern {
+  background-image: radial-gradient(white 1px, transparent 0);
+  background-size: 8px 8px;
+  opacity: 0.5;
+}
+
+section#hero {
+  height: 100vh;
+}
+
+section:not(section#cta) {
+  min-height: 100vh;
+}
+
+section#cta {
+  height: 50vh;
+}
+
+section main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-color, #FFF);
+}
+
+/* safari compatibility */
+details summary::-webkit-details-marker,
+details summary::marker {
+ display: none; 
+ content: "";
+}
+
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+}
+
+summary::after {
+  content: "+";
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+details[open] > summary::after {
+  content: "-";
+}
