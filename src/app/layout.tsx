@@ -3,6 +3,31 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  name: "Formation JavaScript Gratuite",
+  description:
+    "Formation JavaScript en français, apprendre JavaScript rapidement sur une plateforme innovante. Mise à jour en 2025 et maintenue par Ashxjs.",
+  provider: {
+    "@type": "Organization",
+    name: "CodeWithAshX",
+    url: "https://codewithashx.fr",
+  },
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "EUR",
+    availability: "https://schema.org/InStock",
+    url: "https://codewithashx.fr",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "1250",
+  },
+};
+
 export const metadata: Metadata = {
   title: "Apprendre JavaScript avec un cours en ligne 🚀",
   description:
@@ -55,30 +80,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Course",
-              name: "Formation JavaScript Gratuite",
-              description:
-                "Formation JavaScript en français, apprendre JavaScript rapidement sur une plateforme innovante. Mise à jour en 2025 et maintenue par Ashxjs.",
-              provider: {
-                "@type": "Organization",
-                name: "CodeWithAshX",
-                url: "https://codewithashx.fr",
-              },
-              offers: {
-                "@type": "Offer",
-                price: "0",
-                priceCurrency: "EUR",
-                availability: "https://schema.org/InStock",
-                url: "https://codewithashx.fr",
-              },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "1250",
-              },
-            }),
+            __html: JSON.stringify(schema, null, 2),
           }}
         />
       </Head>
