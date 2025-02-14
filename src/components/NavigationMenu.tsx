@@ -13,13 +13,13 @@ const links = [
     label: "Avis",
     href: "#avis",
   },
+  // {
+  //   label: "Prix",
+  //   href: "#pricing",
+  // },
   {
     label: "FAQ",
     href: "#faq",
-  },
-  {
-    label: "Contact",
-    href: "#contact",
   },
 ];
 
