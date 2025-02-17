@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
 
 const schema = {
   "@context": "https://schema.org",
@@ -61,6 +62,8 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
+const GA_ID = "G-N7BW1WHQGW";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -85,6 +88,7 @@ export default function RootLayout({
         />
       </Head>
       <body className={`${poppins.className} antialiased`}>{children}</body>
+      <GoogleAnalytics gaId={GA_ID} />
     </html>
   );
 }
