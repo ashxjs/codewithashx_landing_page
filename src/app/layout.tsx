@@ -7,7 +7,7 @@ import { Poppins } from "next/font/google";
 const schema = {
   "@context": "https://schema.org",
   "@type": "Course",
-  name: "Formation JavaScript Gratuite",
+  name: "Formation JavaScript en ligne : De débutant à expert en 2025🚀",
   description:
     "Formation JavaScript en français, apprendre JavaScript rapidement sur une plateforme innovante. Mise à jour en 2025 et maintenue par Ashxjs.",
   provider: {
@@ -30,7 +30,7 @@ const schema = {
 };
 
 export const metadata: Metadata = {
-  title: "Apprendre JavaScript avec un cours en ligne 🚀",
+  title: "Formation JavaScript en ligne : De débutant à expert en 2025🚀",
   description:
     "Formation JavaScript en français, apprendre JavaScript rapidement sur une plateforme innovante. Mise à jour en 2025 et maintenue par Ashxjs.",
   keywords:
@@ -39,15 +39,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  twitter: {},
   openGraph: {
-    title: "Apprendre JavaScript avec un cours en ligne 🚀",
+    title: "Formation JavaScript en ligne : De débutant à expert en 2025🚀",
     description:
       "Formation JavaScript en français, apprendre JavaScript rapidement sur une plateforme innovante. Mise à jour en 2025 et maintenue par Ashxjs.",
     url: "https://codewithashx.fr",
     siteName: "Codewithashx",
     images: [
       {
-        url: "og_image.png",
+        url: "og_image.webp",
         width: 1200,
         height: 630,
         alt: "Formation JavaScript - Apprenez à coder",

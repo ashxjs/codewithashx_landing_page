@@ -6,17 +6,17 @@ const testimonials = [
   {
     name: "Veechal R.",
     text: "Cette formation m'a permis d'apprendre les bases de la programmation avec JavaScript, je recommande à 100% !",
-    avatar: "/avatars/avatar2.png",
+    avatar: "/avatars/avatar2.webp",
   },
   {
     name: "Léana H.",
     text: "J'avais envie de comprendre comment fonctionnent les sites web, cette formation m'a permis de comprendre les bases de la programmation avec JavaScript et de créer mon premier site web en moins d'une semaine !",
-    avatar: "/avatars/avatar1.png",
+    avatar: "/avatars/avatar1.webp",
   },
   {
     name: "Florent D.",
     text: "J'ai appris JavaScript avec cette formation, j'ai pu créer mon premier et mettre en ligne mon premier site de e-commerce",
-    avatar: "/avatars/avatar3.png",
+    avatar: "/avatars/avatar3.webp",
   },
 ];
 

@@ -26,7 +26,7 @@ const links = [
 export const NavigationMenu = () => (
   <div className="flex justify-center items-center px-5 sticky top-0 bg-[#0a0a0a] z-[400] py-3 sm:justify-between">
     <Image
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png"
+      src="/javascript-logo.webp"
       alt="Logo"
       width={30}
       height={30}

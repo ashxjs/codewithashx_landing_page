@@ -9,9 +9,9 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/80 to-background"></div>
         <div className="relative p-4">
           <h1 className="text-4xl font-bold">
-            Apprends JavaScript et créé tes propres applications web 🚀
+            Apprends JavaScript et passe de débutant à expert en 2025 🚀
           </h1>
-          <p className="text-lg mt-4">
+          <p className="text-lg font-semibold mt-4">
             Formation conçue pour les débutants et les développeurs souhaitant
             maîtriser JavaScript
           </p>
