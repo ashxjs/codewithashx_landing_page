@@ -19,7 +19,14 @@
   }
 }
 
+.snap-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
+.snap-container::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   color: var(--foreground);

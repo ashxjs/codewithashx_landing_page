@@ -32,11 +32,11 @@ export default function Features() {
         Un apprentissage structuré et accessible à tous.
       </p>
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+      <div className="snap-container mt-10 px-6 flex overflow-x-auto snap-x snap-mandatory w-full gap-6 pb-4">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="p-6 bg-gray-900 rounded-xl shadow-md hover:shadow-lg transition"
+            className="p-8 bg-gray-900 rounded-xl shadow-md hover:shadow-lg transition flex-shrink-0 w-[90%] md:w-[calc(33.333%-1rem)] snap-center"
           >
             <div className="text-5xl">{feature.icon}</div>
             <h3 className="mt-4 text-xl font-bold">{feature.title}</h3>
