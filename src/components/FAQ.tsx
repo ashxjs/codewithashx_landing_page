@@ -34,7 +34,7 @@ export default function FAQ() {
       className="py-20 flex flex-col justify-center items-center"
     >
       <h2 className="text-3xl font-bold text-center">FAQ</h2>
-      <div className="mt-10 w-[90%] ">
+      <div className="mt-20 w-[90%]">
         {faqs.map((faq, index) => (
           <details
             key={index}

@@ -29,15 +29,15 @@ export default function Testimonials() {
       <h2 className="pt-3 text-3xl font-bold text-center md:pt-0">
         Les avis de nos élèves
       </h2>
-      <p className="text-md text-gray-50/50 mt-2 text-center md:text-xl">
+      <p className="px-3 text-md text-gray-50/50 mt-2 text-center md:text-xl md:px-0">
         Des dixaines d&apos;apprenants ont déjà transformé leur avenir !
       </p>
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+      <div className="snap-container mt-20 px-6 flex overflow-x-auto snap-x snap-mandatory w-full gap-6 pb-4">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="p-6 bg-gray-900 rounded-xl shadow-md hover:shadow-lg transition"
+            className="p-6 bg-gray-900 flex flex-col gap-y-4 justify-center items-center rounded-xl shadow-md hover:shadow-lg transition flex-shrink-0 w-[90%] md:w-[calc(33.333%-1rem)] snap-center"
           >
             <Image
               src={testimonial.avatar}
@@ -47,7 +47,9 @@ export default function Testimonials() {
               height={64}
             />
             <p className="mt-4 text-gray-50/50 font-semibold">{`"${testimonial.text}"`}</p>
-            <h3 className="mt-3 font-semibold">{testimonial.name}</h3>
+            <h3 className="mt-3 font-semibold self-start">
+              {testimonial.name}
+            </h3>
           </div>
         ))}
       </div>

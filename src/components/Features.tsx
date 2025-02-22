@@ -31,8 +31,7 @@ export default function Features() {
       <p className="text-xs text-gray-50/50 mt-2 text-center xs:text-lg md:text-xl">
         Un apprentissage structuré et accessible à tous.
       </p>
-
-      <div className="snap-container mt-10 px-6 flex overflow-x-auto snap-x snap-mandatory w-full gap-6 pb-4">
+      <div className="snap-container mt-20 px-6 flex overflow-x-auto snap-x snap-mandatory w-full gap-6 pb-4">
         {features.map((feature, index) => (
           <div
             key={index}

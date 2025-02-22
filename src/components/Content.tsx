@@ -107,7 +107,7 @@ export const Content = () => {
       <h2 className="pt-3 text-3xl font-bold text-center md:pt-0">
         Contenu de la formation
       </h2>
-      <div className="mt-10 flex flex-col border-2 border-dashed border-gray-900">
+      <div className="mt-20 flex flex-col border-2 border-dashed border-gray-900">
         {modules.map((module) => (
           <div
             key={module.title}
