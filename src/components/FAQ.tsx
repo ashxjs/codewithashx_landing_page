@@ -1,3 +1,10 @@
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion";
+
 const faqs = [
   {
     question: "Cette formation est-elle faite pour moi ?",
@@ -34,19 +41,14 @@ export default function FAQ() {
       className="py-20 flex flex-col justify-center items-center"
     >
       <h2 className="text-3xl font-bold text-center">FAQ</h2>
-      <div className="mt-20 w-[90%]">
+      <Accordion type="single" collapsible className="mt-20 w-[90%]">
         {faqs.map((faq, index) => (
-          <details
-            key={index}
-            className="max-w-2xl mx-auto mb-4 p-4 bg-gray-900 rounded-lg shadow-md"
-          >
-            <summary className="text-lg font-semibold cursor-pointer">
-              {faq.question}
-            </summary>
-            <p className="pt-3">{faq.answer}</p>
-          </details>
+          <AccordionItem key={index} value={faq.question}>
+            <AccordionTrigger>{faq.question}</AccordionTrigger>
+            <AccordionContent>{faq.answer}</AccordionContent>
+          </AccordionItem>
         ))}
-      </div>
+      </Accordion>
     </section>
   );
 }
