@@ -28,7 +28,7 @@ export default function Features() {
       <h2 className="pt-3 text-2xl font-bold text-center md:pt-0 xs:text-3xl">
         Pourquoi choisir cette formation ?
       </h2>
-      <p className="text-sm text-gray-600 mt-2 text-center xs:text-lg">
+      <p className="text-xs text-gray-50/50 mt-2 text-center xs:text-lg md:text-xl">
         Un apprentissage structuré et accessible à tous.
       </p>
 
@@ -40,7 +40,7 @@ export default function Features() {
           >
             <div className="text-5xl">{feature.icon}</div>
             <h3 className="mt-4 text-xl font-bold">{feature.title}</h3>
-            <p className="text-gray-600 mt-2 font-semibold">
+            <p className="text-gray-50/50 mt-2 font-semibold">
               {feature.description}
             </p>
           </div>

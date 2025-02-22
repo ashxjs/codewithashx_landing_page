@@ -29,7 +29,7 @@ export default function Testimonials() {
       <h2 className="pt-3 text-3xl font-bold text-center md:pt-0">
         Les avis de nos élèves
       </h2>
-      <p className="text-lg text-gray-600 font-semibold mt-2 text-center">
+      <p className="text-md text-gray-50/50 mt-2 text-center md:text-xl">
         Des dixaines d&apos;apprenants ont déjà transformé leur avenir !
       </p>
 
@@ -46,8 +46,8 @@ export default function Testimonials() {
               width={64}
               height={64}
             />
-            <p className="mt-4 text-gray-600 font-semibold">{`"${testimonial.text}"`}</p>
-            <h4 className="mt-3 font-semibold">{testimonial.name}</h4>
+            <p className="mt-4 text-gray-50/50 font-semibold">{`"${testimonial.text}"`}</p>
+            <h3 className="mt-3 font-semibold">{testimonial.name}</h3>
           </div>
         ))}
       </div>

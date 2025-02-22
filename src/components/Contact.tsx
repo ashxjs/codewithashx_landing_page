@@ -15,13 +15,13 @@ export const Footer = () => {
   return (
     <footer className="flex flex-col justify-center items-center py-10 px-6 gap-4">
       <div className="flex items-center justify-center gap-4">
-        <SocialBtn href={INSTAGRAM_URL}>
+        <SocialBtn href={INSTAGRAM_URL} ariaLabel="Instagram Profile">
           <InstagramLogo color="#FFFFFF" height={ICON_SIZE} width={ICON_SIZE} />
         </SocialBtn>
-        <SocialBtn href={GITHUB_URL}>
+        <SocialBtn href={GITHUB_URL} ariaLabel="Github Profile">
           <GithubLogo color="#FFFFFF" height={ICON_SIZE} width={ICON_SIZE} />
         </SocialBtn>
-        <SocialBtn href={LINKEDIN_URL}>
+        <SocialBtn href={LINKEDIN_URL} ariaLabel="Linkedin Profile">
           <LinkedinLogo color="#FFFFFF" height={ICON_SIZE} width={ICON_SIZE} />
         </SocialBtn>
       </div>

@@ -1,8 +1,9 @@
 import "./globals.css";
 import Head from "next/head";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const schema = {
   "@context": "https://schema.org",
@@ -88,8 +89,11 @@ export default function RootLayout({
           }}
         />
       </Head>
-      <body className={`${poppins.className} antialiased`}>{children}</body>
-      <GoogleAnalytics gaId={GA_ID} />
+      <body className={`${poppins.className} antialiased`}>
+        {children}
+        <SpeedInsights />
+        <GoogleAnalytics gaId={GA_ID} />
+      </body>
     </html>
   );
 }
