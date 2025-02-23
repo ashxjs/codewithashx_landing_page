@@ -13,11 +13,10 @@ export const CTA = () => (
     </p>
     <div className="mt-6">
       <a
+        role="button"
         href={CTA_SUBSCRIPTION_URL}
         target="_blank"
-        className={
-          "bg-gray-800 font-bold mt-6 inline-block text-white py-3 px-6 rounded-lg shadow-md transition"
-        }
+        className="font-bold mt-6 inline-block text-white py-3 px-6 bg-blue-900 hover:bg-blue-700 rounded-full shadow-md border border-blue-700"
       >
         J&apos;accède à la formation 🚀
       </a>
