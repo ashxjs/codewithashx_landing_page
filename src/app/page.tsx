@@ -5,6 +5,7 @@ import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import { NavigationMenu } from "@/components/NavigationMenu";
+import { Overlay } from "@/components/Overlay";
 import Testimonials from "@/components/Testimonials";
 
 export default function HomePage() {
@@ -19,6 +20,7 @@ export default function HomePage() {
       {/* <Pricing /> */}
       <CTA />
       <Footer />
+      <Overlay />
     </>
   );
 }

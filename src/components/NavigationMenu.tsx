@@ -24,13 +24,13 @@ const links = [
 ];
 
 export const NavigationMenu = () => (
-  <div className="flex justify-center items-center px-5 sticky top-0 bg-[#0a0a0a] z-[400] py-3 sm:justify-between">
+  <div className="flex justify-between items-center px-5 sticky top-0 bg-[#0a0a0a] z-[400] py-3">
     <Image
       src="/javascript-logo.webp"
       alt="Logo"
       width={30}
       height={30}
-      className="rounded-lg hidden sm:block"
+      className="rounded-[5px]"
     />
     <nav className="flex justify-around items-center gap-x-4">
       {links.map((link) => (

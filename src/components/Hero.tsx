@@ -1,5 +1,4 @@
 import { CTA_SUBSCRIPTION_URL } from "@/lib/constant";
-import { CTAButton } from "@/lib/CTAButton";
 
 export default function Hero() {
   return (
