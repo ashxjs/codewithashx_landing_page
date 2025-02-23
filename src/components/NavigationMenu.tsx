@@ -6,7 +6,7 @@ const links = [
     href: "#formation",
   },
   {
-    label: "Contenu",
+    label: "Contenus",
     href: "#content",
   },
   {

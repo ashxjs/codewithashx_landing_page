@@ -63,7 +63,7 @@ const modules: Module[] = [
         description: "Introduction à JavaScript",
       },
       {
-        title: "Quiz - Valides tes connaissances !",
+        title: "Quizz - Valides tes connaissances !",
         order: 7,
         icon: "🧠",
         description: "Introduction à JavaScript",
@@ -105,7 +105,7 @@ export const Content = () => {
       className="py-20 p-5 flex flex-col items-center justify-center"
     >
       <h2 className="pt-3 text-3xl font-bold text-center md:pt-0">
-        Contenu de la formation
+        Contenus de la formation
       </h2>
       <div className="mt-20 flex flex-col border-2 border-dashed border-gray-900">
         {modules.map((module) => (
