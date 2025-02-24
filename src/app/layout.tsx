@@ -3,7 +3,9 @@ import Head from "next/head";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
+
+export const dynamic = "force-dynamic";
 
 const schema = {
   "@context": "https://schema.org",
@@ -82,17 +84,33 @@ export default function RootLayout({
           name="next-size-adjust"
           content="width=device-width, initial-scale=1"
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schema, null, 2),
-          }}
-        />
       </Head>
+      <Script
+        id="schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema, null, 2),
+        }}
+      />
+      <Script
+        id="gtm-script"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(w,d,s,l,i){
+              w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true;
+              j.src='https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+              f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','${GA_ID}');
+          `,
+        }}
+      />
       <body className={`${poppins.className} antialiased`}>
         {children}
         <SpeedInsights />
-        <GoogleAnalytics gaId={GA_ID} />
       </body>
     </html>
   );

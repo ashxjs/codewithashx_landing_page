@@ -118,3 +118,10 @@ details[open] > summary::after {
     scrollbar-width: none;  /* Firefox */
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
