@@ -1,98 +1,106 @@
 type Module = {
   title: string;
   order: number;
-  description: string;
-  icon: string;
   chapters: Chapter[];
 };
 
 type Chapter = {
   title: string;
   order: number;
-  icon: string;
-  description: string;
 };
 
 const modules: Module[] = [
   {
     title: "Introduction",
     order: 1,
-    description: "Les bases de JavaScript",
-    icon: "🚀",
     chapters: [
       {
         title: "Introduction",
         order: 0,
-        icon: "👋",
-        description: "Introduction à JavaScript",
       },
       {
         title: "Variables",
         order: 1,
-        icon: "1️⃣",
-        description: "Introduction à JavaScript",
       },
       {
         title: "Numbers",
         order: 2,
-        icon: "2️⃣",
-        description: "Introduction à JavaScript",
       },
       {
         title: "Strings",
         order: 3,
-        icon: "3️⃣",
-        description: "Introduction à JavaScript",
       },
       {
         title: "Conditions",
         order: 4,
-        icon: "4️⃣",
-        description: "Introduction à JavaScript",
       },
       {
         title: "Arrays",
         order: 5,
-        icon: "5️⃣",
-        description: "Introduction à JavaScript",
       },
       {
         title: "Functions",
         order: 6,
-        icon: "6️⃣",
-        description: "Introduction à JavaScript",
       },
       {
         title: "Quizz - Valides tes connaissances !",
         order: 7,
-        icon: "🧠",
-        description: "Introduction à JavaScript",
       },
       {
         title: "Projet 1 - Créer une carte de jeux en 2D",
         order: 8,
-        icon: "🕹️",
-        description: "Introduction à JavaScript",
       },
     ],
   },
   {
     title: "Javascript avancée",
     order: 2,
-    description: "Notions avancées de JavaScript",
-    icon: "🔥",
     chapters: [
       {
         title: "Les objets",
         order: 8,
-        icon: "⏳",
-        description: "Introduction à JavaScript",
       },
       {
         title: "La P.O.O",
         order: 9,
-        icon: "⏳",
-        description: "Introduction à la P.O.O",
+      },
+      {
+        title: "La P.O.O avancée ⌛️",
+        order: 10,
+      },
+      {
+        title: "Exercices pratiques ⌛️",
+        order: 11,
+      },
+    ],
+  },
+  {
+    title: "Le Web",
+    order: 3,
+    chapters: [
+      {
+        title: "Comment ça marche ? ⌛️",
+        order: 12,
+      },
+      {
+        title: "Le HTML ⌛️",
+        order: 13,
+      },
+      {
+        title: "Le CSS ⌛️",
+        order: 14,
+      },
+      {
+        title: "Le DOM ⌛️",
+        order: 15,
+      },
+      {
+        title: "Manipulation du DOM avec Javascript ⌛️",
+        order: 16,
+      },
+      {
+        title: "Créer ton premier site de e-commerce ⌛️",
+        order: 17,
       },
     ],
   },
@@ -122,7 +130,9 @@ export const Content = () => {
                   key={chapter.title}
                   className="mt-1 flex items-start gap-x-2"
                 >
-                  <span>{chapter.icon}</span>
+                  <span className="border border-blue-700 bg-blue-900/50 h-8 w-8 flex items-center justify-center rounded-md text-md font-semibold md:text-lg">
+                    {chapter.order}
+                  </span>
                   <span className="text-md font-semibold md:text-lg">
                     {chapter.title}
                   </span>

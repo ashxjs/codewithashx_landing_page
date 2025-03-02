@@ -13,9 +13,9 @@ const features = [
   },
   {
     icon: "🎓",
-    title: "1 langage, 3 usages",
+    title: "3 types d'applications",
     description:
-      "Avec JavaScript, vous pouvez créer vos propres applications web (site vitrine, site e-commerce, etc.), des applications mobiles (pour IOs et Android) et des serveurs (API, etc.)",
+      "Avec Javascript, tu peux créer des applications web, mobiles et serveurs.",
   },
 ];
 
