@@ -7,28 +7,29 @@ import {
 
 const faqs = [
   {
-    question: "Cette formation est-elle faite pour moi ?",
+    question: "La formation JavaScript est-elle adaptée à mon niveau ?",
     answer:
       "Oui, absolument ! Cette formation est conçue pour les débutants qui souhaitent apprendre à coder avec JavaScript",
   },
   {
-    question: "Combien de temps ai-je accès à la formation ?",
+    question: "Quelle est la durée d'accès à la formation JavaScript ?",
     answer:
       "Tu auras un accès à vie à la formation ! Pas de limite de temps ⏳, tu peux avancer à ton rythme et revenir sur les cours autant de fois que tu le souhaites",
   },
   {
-    question: "Y a-t-il des projets ?",
+    question:
+      "Des projets pratiques sont-ils inclus dans la formation JavaScript ?",
     answer:
       "À la fin de chaque module, tu devras compléter un quiz et réaliser un projet ! Ils te permettront de valider l'ensemble des notions vues au cours du module",
   },
   {
-    question: "Cette formation est-elle prise en charge par le CPF ?",
+    question: "La formation JavaScript est-elle éligible au CPF ?",
     answer:
       "Pour l'instant ce n'est pas le cas, mais peut-être que dans le futur !",
   },
   {
     question:
-      "De quels outils vais-je avoir besoin pour suivre cette formation ?",
+      "Quels outils sont nécessaires pour suivre la formation JavaScript ?",
     answer:
       "Nous n'utiliserons que des outils gratuits, comme Visual Studio Code, Git, GitHub et Node.js ",
   },

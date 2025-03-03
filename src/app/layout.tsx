@@ -1,5 +1,4 @@
 import "./globals.css";
-import Head from "next/head";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -12,7 +11,7 @@ const schema = {
   "@type": "Course",
   name: "Formation JavaScript en ligne : De débutant à expert en 2025🚀",
   description:
-    "Formation JavaScript en français, apprendre JavaScript rapidement sur une plateforme innovante. Mise à jour en 2025 et maintenue par Ashxjs.",
+    "Maîtrisez JavaScript avec notre formation en ligne. Accédez à des modules structurés, des projets concrets et un support continu pour devenir expert en 2025",
   provider: {
     "@type": "Organization",
     name: "CodeWithAshX",
@@ -35,7 +34,7 @@ const schema = {
 export const metadata: Metadata = {
   title: "Formation JavaScript en ligne : De débutant à expert en 2025🚀",
   description:
-    "Formation JavaScript en français, apprendre JavaScript rapidement sur une plateforme innovante. Mise à jour en 2025 et maintenue par Ashxjs.",
+    "Maîtrisez JavaScript avec notre formation en ligne. Accédez à des modules structurés, des projets concrets et un support continu pour devenir expert en 2025",
   keywords:
     "formation JavaScript, apprendre JavaScript, développement web, formation gratuite, créer site web, application mobile, serveur",
   metadataBase: new URL("https://codewithashx.fr"),
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Formation JavaScript en ligne : De débutant à expert en 2025🚀",
     description:
-      "Formation JavaScript en français, apprendre JavaScript rapidement sur une plateforme innovante. Mise à jour en 2025 et maintenue par Ashxjs.",
+      "Maîtrisez JavaScript avec notre formation en ligne. Accédez à des modules structurés, des projets concrets et un support continu pour devenir expert en 2025",
     url: "https://codewithashx.fr",
     siteName: "Codewithashx",
     images: [
@@ -58,6 +57,15 @@ export const metadata: Metadata = {
       },
     ],
     type: "website",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "256x256", type: "image/png" },
+    ],
   },
 };
 
@@ -75,16 +83,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <Head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
-        />
-        <meta
-          name="next-size-adjust"
-          content="width=device-width, initial-scale=1"
-        />
-      </Head>
       <Script
         id="schema"
         type="application/ld+json"
@@ -92,6 +90,7 @@ export default function RootLayout({
           __html: JSON.stringify(schema, null, 2),
         }}
       />
+      <meta name="next-size-adjust" content="" />
       <Script
         id="gtm-script"
         strategy="afterInteractive"

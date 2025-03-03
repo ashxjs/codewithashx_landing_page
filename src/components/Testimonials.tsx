@@ -8,12 +8,12 @@ const testimonials = [
   },
   {
     name: "Léana H.",
-    text: "J'avais envie de comprendre comment fonctionnent les sites web, cette formation m'a permis de comprendre les bases de la programmation avec JavaScript et de créer mon premier site web en moins d'une semaine !",
+    text: "Grâce à cette formation JavaScript, j'ai pu maîtriser les bases de la programmation et développer mon propre site web !",
     avatar: "/avatars/avatar1.webp",
   },
   {
     name: "Florent D.",
-    text: "J'ai appris JavaScript avec cette formation, j'ai pu créer mon premier et mettre en ligne mon premier site de e-commerce",
+    text: "Cette formation m'a aidé à créer et lancer mon premier site e-commerce avec JavaScript",
     avatar: "/avatars/avatar3.webp",
   },
 ];

@@ -9,7 +9,8 @@ export const CTA = () => (
       Rejoignez la formation dès aujourd&apos;hui !
     </h2>
     <p className="text-center text-md text-gray-200 mt-2 md:text-lg">
-      Les 50 premières inscriptions sont 100% gratuites.
+      Inscrivez-vous dès maintenant à notre formation JavaScript complète et
+      profitez d&apos;un accès gratuit pour les 50 premiers inscrits !
     </p>
     <div className="mt-6">
       <a

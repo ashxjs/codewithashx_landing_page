@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="relative p-4">
           <h1 className="text-4xl font-bold tracking-tight leading-[3rem] md:leading-none">
             <span className="relative mx-3">
-              <span className="relative">Apprends</span>
+              <span className="relative">Formation</span>
               <svg
                 width="219"
                 height="24"
@@ -26,15 +26,16 @@ export default function Hero() {
                 ></path>
               </svg>
             </span>
-            JavaScript et passe de débutant à{" "}
+            JavaScript complète : De débutant à{" "}
             <span className="border border-blue-600/80 bg-blue-900/70 px-2 mx-1">
               expert
             </span>{" "}
             en 2025
           </h1>
           <p className="text-lg font-semibold mt-4">
-            Formation conçue pour les débutants et les développeurs souhaitant
-            maîtriser JavaScript
+            Formation JavaScript en ligne pour débutants et développeurs.
+            Apprenez à créer des applications web, mobiles et serveurs avec des
+            projets pratiques.
           </p>
           <a
             role="button"
