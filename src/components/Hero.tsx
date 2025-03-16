@@ -1,4 +1,5 @@
-import { CTA_SUBSCRIPTION_URL } from "@/lib/constant";
+import { Routes } from "@/types/Routes";
+import { CTAButton } from "./CTAButton";
 
 export default function Hero() {
   return (
@@ -37,14 +38,7 @@ export default function Hero() {
             Apprenez à créer des applications web, mobiles et serveurs avec des
             projets pratiques.
           </p>
-          <a
-            role="button"
-            href={CTA_SUBSCRIPTION_URL}
-            target="_blank"
-            className="font-bold mt-6 inline-block text-white py-3 px-6 bg-blue-900 hover:bg-blue-700 rounded-full shadow-md border border-blue-700"
-          >
-            J&apos;accède à la formation 🚀
-          </a>
+          <CTAButton href={Routes.Subscriptions} />
         </div>
       </main>
     </section>

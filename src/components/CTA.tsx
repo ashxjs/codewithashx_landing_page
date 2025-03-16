@@ -1,4 +1,5 @@
-import { CTA_SUBSCRIPTION_URL } from "@/lib/constant";
+import { Routes } from "@/types/Routes";
+import { CTAButton } from "./CTAButton";
 
 export const CTA = () => (
   <section
@@ -13,14 +14,7 @@ export const CTA = () => (
       profitez d&apos;un accès gratuit pour les 50 premiers inscrits !
     </p>
     <div className="mt-6">
-      <a
-        role="button"
-        href={CTA_SUBSCRIPTION_URL}
-        target="_blank"
-        className="font-bold mt-6 inline-block text-white py-3 px-6 bg-blue-900 hover:bg-blue-700 rounded-full shadow-md border border-blue-700"
-      >
-        J&apos;accède à la formation 🚀
-      </a>
+      <CTAButton href={Routes.Subscriptions} />
     </div>
   </section>
 );

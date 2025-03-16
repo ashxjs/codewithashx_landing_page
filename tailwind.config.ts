@@ -11,6 +11,9 @@ export default {
   ],
   theme: {
     extend: {
+      height: {
+        screen: "100dvh",
+      },
       screens: {
         xs: "400px",
       },
