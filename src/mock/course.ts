@@ -1,0 +1,3 @@
+export const COURSE = {
+  JAVASCRIPT_FROM_ZERO_TO_HERO: 372449,
+};

@@ -1,0 +1,4 @@
+export const TAGS = {
+  WAITING_LIST: 1334733,
+  FREE_MEMBER: 1347251,
+};
