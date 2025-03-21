@@ -2,32 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Script from "next/script";
-
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "Course",
-  name: "Formation JavaScript en ligne : De débutant à expert en 2025🚀",
-  description:
-    "Maîtrisez JavaScript avec notre formation en ligne. Accédez à des modules structurés, des projets concrets et un support continu pour devenir expert en 2025",
-  provider: {
-    "@type": "Organization",
-    name: "CodeWithAshX",
-    url: "https://codewithashx.fr",
-  },
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "EUR",
-    availability: "https://schema.org/InStock",
-    url: "https://codewithashx.fr",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "1250",
-  },
-};
+import { GoogleSchema } from "./components/GoogleSchema";
+import { GoogleAnalytics } from "./components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: "Formation JavaScript en ligne : De débutant à expert en 2025🚀",
@@ -39,7 +15,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  twitter: {},
   openGraph: {
     title: "Formation JavaScript en ligne : De débutant à expert en 2025🚀",
     description:
@@ -72,8 +47,6 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-const GA_ID = "G-N7BW1WHQGW";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -81,30 +54,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <Script
-        id="schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(schema, null, 2),
-        }}
-      />
       <meta name="next-size-adjust" content="" />
-      <Script
-        id="gtm-script"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function(w,d,s,l,i){
-              w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-              var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-              j.async=true;
-              j.src='https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-              f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','${GA_ID}');
-          `,
-        }}
-      />
+      <GoogleSchema />
+      <GoogleAnalytics />
       <body className={`${poppins.className} antialiased`}>
         {children}
         <SpeedInsights />
