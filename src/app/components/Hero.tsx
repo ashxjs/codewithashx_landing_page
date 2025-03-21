@@ -1,5 +1,5 @@
 import { Routes } from "@/types/Routes";
-import { CTAButton } from "./CTAButton";
+import { CTAButton } from "../../components/CTAButton";
 
 export default function Hero() {
   return (

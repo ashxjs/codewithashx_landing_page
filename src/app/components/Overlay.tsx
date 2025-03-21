@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useScroll } from "framer-motion";
-import { CTAButton } from "./CTAButton";
+import { CTAButton } from "../../components/CTAButton";
 import { Routes } from "@/types/Routes";
 
 export const Overlay = () => {

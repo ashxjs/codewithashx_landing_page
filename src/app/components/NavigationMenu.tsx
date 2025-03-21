@@ -1,9 +1,9 @@
 "use client";
 
-import { MenuIcon, X } from "lucide-react";
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { MenuIcon, X } from "lucide-react";
 import { MobileMenu } from "./MobileMenu";
+import { useState, useEffect, useRef } from "react";
 
 export const NavigationMenu = ({
   links,
