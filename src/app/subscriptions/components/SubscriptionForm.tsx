@@ -1,21 +1,28 @@
 "use client";
 
 import Form from "next/form";
-import { useFormStatus } from "react-dom";
-import { submitForm } from "../actions";
+import { useActionState } from "react";
+import { subscribeUserForm } from "../actions";
 import { SubmitButton } from "./SubmitButton";
 import { FunctionComponent } from "react";
+import { SubscriptionFormState } from "../types/form";
 
-export const dynamic = "force-dynamic";
+const initialState: SubscriptionFormState = {
+  error: null,
+  success: null,
+};
 
 export const SubscriptionForm: FunctionComponent = () => {
-  const { pending } = useFormStatus();
+  const [state, formAction, isPending] = useActionState(
+    subscribeUserForm,
+    initialState
+  );
 
   const inputClassName =
     "rounded-xl font-semibold bg-background/70 border border-blue-700 px-5 py-3 placeholder:font-semibold placeholder:text-white";
 
   return (
-    <Form action={submitForm} className="flex flex-col gap-4">
+    <Form action={formAction} className="flex flex-col gap-4">
       <input
         type="text"
         autoCorrect="firstname"
@@ -43,7 +50,13 @@ export const SubscriptionForm: FunctionComponent = () => {
         required
         className={inputClassName}
       />
-      <SubmitButton pending={pending} />
+      {state?.success && (
+        <p className="text-center text-green-500">{state.success}</p>
+      )}
+      {state?.error && (
+        <p className="text-center text-red-500">{state.error}</p>
+      )}
+      <SubmitButton pending={isPending} />
     </Form>
   );
 };
