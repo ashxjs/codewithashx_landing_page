@@ -24,22 +24,25 @@ export const SubscriptionForm: FunctionComponent = () => {
   return (
     <Form action={formAction} className="flex flex-col gap-4">
       <input
+        required
+        autoFocus
         type="text"
         autoCorrect="firstname"
         autoComplete="given-name"
         placeholder="Nom"
         name="firstname"
-        required
         className={inputClassName}
+        aria-describedby="firstname-error"
       />
       <input
+        required
         type="text"
         autoCorrect="lastname"
         autoComplete="family-name"
         placeholder="Prénom"
         name="lastname"
-        required
         className={inputClassName}
+        aria-describedby="lastname-error"
       />
       <input
         type="email"
@@ -49,12 +52,25 @@ export const SubscriptionForm: FunctionComponent = () => {
         name="email"
         required
         className={inputClassName}
+        aria-describedby="email-error"
       />
       {state?.success && (
-        <p className="text-center text-green-500">{state.success}</p>
+        <p
+          role="status"
+          aria-live="polite"
+          className="text-center text-green-500"
+        >
+          {state.success}
+        </p>
       )}
       {state?.error && (
-        <p className="text-center text-red-500">{state.error}</p>
+        <p
+          role="alert"
+          aria-live="assertive"
+          className="text-center text-red-500"
+        >
+          {state.error}
+        </p>
       )}
       <SubmitButton pending={isPending} />
     </Form>

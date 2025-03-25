@@ -62,7 +62,13 @@ export const NavigationMenu = ({
           className="rounded-[5px]"
         />
         <div className="md:hidden flex items-center justify-center border border-blue-600/80 bg-blue-900/70 p-2">
-          <button className="text-white" onClick={toggleMenu}>
+          <button
+            role="button"
+            aria-label="Ouvre le menu contenant les liens de navigation"
+            aria-roledescription="Ouvre le menu contenant les liens de navigation"
+            className="text-white"
+            onClick={toggleMenu}
+          >
             {isMenuOpen ? <X /> : <MenuIcon />}
           </button>
         </div>
