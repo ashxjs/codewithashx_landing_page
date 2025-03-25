@@ -39,7 +39,7 @@ export class SystemeIoServiceContact {
   ): Promise<Response> {
     const tagUrl = `${this._baseUrl}/contacts/${contactId}/tags`;
 
-    return await fetch(tagUrl, {
+    return fetch(tagUrl, {
       method: "POST",
       headers: {
         Accept: "application/json",

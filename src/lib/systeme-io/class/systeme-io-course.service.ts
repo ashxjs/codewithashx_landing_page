@@ -14,7 +14,7 @@ export class SystemeIoServiceCourse {
   ): Promise<Response> {
     const enrollmentUrl = `${this._baseUrl}/school/courses/${payload.courseId}/enrollments`;
 
-    return await fetch(enrollmentUrl, {
+    return fetch(enrollmentUrl, {
       method: "POST",
       headers: {
         Accept: "application/json",
