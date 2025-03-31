@@ -183,5 +183,19 @@
         "content": "Contenus",
         "testimonials": "Avis",
         "faq": "FAQ"
+    },
+    "subscribe": {
+        "title": "Dernières étapes pour accéder à la formation",
+        "backButton": "Retour à l'accueil",
+        "form": {
+            "title": "Inscription à la formation",
+            "firstname": "Prénom",
+            "lastname": "Nom",
+            "email": "Email",
+            "submit": "Je m'inscris gratuitement 🚀",
+            "pending": "Inscription en cours...",
+            "success": "Inscription réussie !",
+            "error": "Une erreur est survenue lors de l'inscription"
+        }
     }
 }

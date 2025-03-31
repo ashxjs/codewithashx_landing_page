@@ -183,5 +183,19 @@
         "content": "Content",
         "testimonials": "Reviews",
         "faq": "FAQ"
+    },
+    "subscribe": {
+        "title": "Final steps to access the training",
+        "backButton": "Back to home",
+        "form": {
+            "title": "Training Registration",
+            "firstname": "First Name",
+            "lastname": "Last Name",
+            "email": "Email",
+            "submit": "I sign up for free 🚀",
+            "pending": "Registration in progress...",
+            "success": "Registration successful!",
+            "error": "An error occurred during registration"
+        }
     }
 }

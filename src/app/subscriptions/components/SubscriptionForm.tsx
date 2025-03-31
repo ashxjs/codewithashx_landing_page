@@ -6,6 +6,7 @@ import { subscribeUserForm } from "../actions";
 import { SubmitButton } from "./SubmitButton";
 import { FunctionComponent } from "react";
 import { SubscriptionFormState } from "../types/form";
+import { useTranslations } from "next-intl";
 
 const initialState: SubscriptionFormState = {
   error: null,
@@ -18,6 +19,8 @@ export const SubscriptionForm: FunctionComponent = () => {
     initialState
   );
 
+  const t = useTranslations("subscribe");
+
   const inputClassName =
     "rounded-xl font-semibold bg-background/70 border border-blue-700 px-5 py-3 placeholder:font-semibold placeholder:text-white";
 
@@ -29,7 +32,7 @@ export const SubscriptionForm: FunctionComponent = () => {
         type="text"
         autoCorrect="firstname"
         autoComplete="given-name"
-        placeholder="Nom"
+        placeholder={t("form.firstname")}
         name="firstname"
         className={inputClassName}
         aria-describedby="firstname-error"
@@ -39,7 +42,7 @@ export const SubscriptionForm: FunctionComponent = () => {
         type="text"
         autoCorrect="lastname"
         autoComplete="family-name"
-        placeholder="Prénom"
+        placeholder={t("form.lastname")}
         name="lastname"
         className={inputClassName}
         aria-describedby="lastname-error"
@@ -48,7 +51,7 @@ export const SubscriptionForm: FunctionComponent = () => {
         type="email"
         autoCorrect="email"
         autoComplete="email"
-        placeholder="Email"
+        placeholder={t("form.email")}
         name="email"
         required
         className={inputClassName}
@@ -60,7 +63,7 @@ export const SubscriptionForm: FunctionComponent = () => {
           aria-live="polite"
           className="text-center text-green-500"
         >
-          {state.success}
+          {t(state.success)}
         </p>
       )}
       {state?.error && (
@@ -69,7 +72,7 @@ export const SubscriptionForm: FunctionComponent = () => {
           aria-live="assertive"
           className="text-center text-red-500"
         >
-          {state.error}
+          {t(state.error)}
         </p>
       )}
       <SubmitButton pending={isPending} />
