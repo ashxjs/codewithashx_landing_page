@@ -1,0 +1,187 @@
+{
+    "hero": {
+        "title_1": "Formation",
+        "title_2": "JavaScript complète : De débutant à ",
+        "title_3": "expert",
+        "title_4": "en 2025",
+        "description": "Formation JavaScript en ligne pour débutants et développeurs. Apprend à coder et créer des applications web, mobiles et serveurs avec des projets pratiques.",
+        "CTAButton": "J'accède à la formation 🚀"
+    },
+    "features": {
+        "title": "Pourquoi choisir cette formation ?",
+        "description": "Un apprentissage structuré et accessible à tous.",
+        "features": {
+            "learning_code": {
+                "icon": "🚀",
+                "title": "Apprends à coder en pratiquant",
+                "description": "Chaque module inclut des projets concrets pour appliquer immédiatement ce que tu apprends."
+            },
+            "lifetime_access": {
+                "icon": "🔒",
+                "title": "Accès à vie",
+                "description": "Une fois inscrit, tu auras accès à la formation sans limite de temps."
+            },
+            "one_language_three_apps": {
+                "icon": "🎓",
+                "title": "1 langage, 3 types d'applications",
+                "description": "Avec Javascript, tu peux créer des applications web, mobiles et serveurs."
+            }
+        }
+    },
+    "content": {
+        "title": "Contenus de la formation",
+        "modules": {
+            "1": {
+                "title": "Introduction",
+                "chapters": {
+                    "0": {
+                        "title": "Introduction",
+                        "description": "Introduction à la formation et à Javascript"
+                    },
+                    "1": {
+                        "title": "Variables",
+                        "description": "Introduction aux variables et aux types de données"
+                    },
+                    "2": {
+                        "title": "Numbers",
+                        "description": "Introduction aux nombres et aux opérations mathématiques"
+                    },
+                    "3": {
+                        "title": "Strings",
+                        "description": "Introduction aux chaînes de caractères et aux opérations de manipulation"
+                    },
+                    "4": {
+                        "title": "Conditions",
+                        "description": "Introduction aux conditions et aux structures de contrôle"
+                    },
+                    "5": {
+                        "title": "Arrays",
+                        "description": "Introduction aux tableaux et aux structures de données"
+                    },
+                    "6": {
+                        "title": "Functions",
+                        "description": "Introduction aux fonctions"
+                    },
+                    "7": {
+                        "title": "Quizz - Valides tes connaissances !",
+                        "description": "Quizz pour valider tes connaissances"
+                    },
+                    "8": {
+                        "title": "Projet 1 - Créer une carte de jeux en 2D",
+                        "description": "Création d'une carte de jeux en 2D avec Javascript"
+                    }
+                }
+            },
+            "2": {
+                "title": "Les objets",
+                "chapters": {
+                    "8": {
+                        "title": "Les objets",
+                        "description": "Introduction aux objets et aux structures de données"
+                    },
+                    "9": {
+                        "title": "La P.O.O",
+                        "description": "Introduction à la programmation orientée objet"
+                    },
+                    "10": {
+                        "title": "La P.O.O avancée",
+                        "description": "La programmation orientée objet avancée"
+                    },
+                    "11": {
+                        "title": "Un peu de pratique",
+                        "description": "Un peu de pratique avec la P.O.O"
+                    }
+                }
+            },
+            "3": {
+                "title": "Le Web",
+                "chapters": {
+                    "12": {
+                        "title": "Comment ça marche ?",
+                        "description": "Introduction au Web"
+                    },
+                    "13": {
+                        "title": "Le HTML",
+                        "description": "Introduction à HTML"
+                    },
+                    "14": {
+                        "title": "Le CSS",
+                        "description": "Introduction à CSS"
+                    },
+                    "15": {
+                        "title": "Le DOM",
+                        "description": "Introduction au DOM"
+                    },
+                    "16": {
+                        "title": "Manipuler le DOM avec JavaScript  ",
+                        "description": "Manipuler le DOM avec JavaScript"
+                    },
+                    "17": {
+                        "title": "Créer ton premier site de e-commerce",
+                        "description": "Créer ton premier site de e-commerce"
+                    }
+                }
+            }
+        }
+    },
+    "testimonials": {
+        "title": "Les avis de nos élèves",
+        "description": "Des dizaines d'apprenants ont déjà transformé leur avenir !",
+        "testimonials": {
+            "0": {
+                "name": "Veechal R.",
+                "text": "Cette formation m'a permis d'apprendre les bases de la programmation avec JavaScript, je recommande à 100% !"
+            },
+            "1": {
+                "name": "Léana H.",
+                "text": "Grâce à cette formation JavaScript, j'ai pu maîtriser les bases de la programmation et développer mon propre site web !"
+            },
+            "2": {
+                "name": "Florent D.",
+                "text": "Cette formation m'a aidé à créer et lancer mon premier site e-commerce avec JavaScript"
+            }
+        }
+    },
+    "overlay": {
+        "CTAButton": "Rejoindre"
+    },
+    "CTA": {
+        "title": "Rejoignez la formation dès aujourd'hui !",
+        "description": "Inscrivez-vous dès maintenant à notre formation JavaScript complète et profitez d'un accès gratuit pour les 50 premiers inscrits !",
+        "CTAButton": "J'accède à la formation 🚀"
+    },
+    "FAQ": {
+        "title": "Questions fréquentes",
+        "questions": {
+            "0": {
+                "question": "La formation JavaScript est-elle adaptée à mon niveau ?",
+                "answer": "Oui, absolument ! Cette formation est conçue pour les débutants qui souhaitent apprendre à coder avec JavaScript"
+            },
+            "1": {
+                "question": "Quelle est la durée d'accès à la formation JavaScript ?",
+                "answer": "Tu auras un accès à vie à la formation ! Pas de limite de temps ⏳, tu peux avancer à ton rythme et revenir sur les cours autant de fois que tu le souhaites"
+            },
+            "2": {
+                "question": "Des projets pratiques sont-ils inclus dans la formation JavaScript ?",
+                "answer": "Oui, à la fin de chaque module, tu devras compléter un quiz et réaliser un projet ! Ils te permettront de valider l'ensemble des notions vues au cours du module"
+            },
+            "3": {
+                "question": "La formation JavaScript est-elle éligible au CPF ?",
+                "answer": "Non, pour l'instant, mais peut-être que dans le futur !"
+            },
+            "4": {
+                "question": "Quels outils sont nécessaires pour suivre la formation JavaScript ?",
+                "answer": "Nous n'utiliserons que des outils gratuits, comme Visual Studio Code, Git, GitHub et Node.js "
+            }
+        }
+    },
+    "footer": {
+        "copyright": "©{year} - present Code with Ashx"
+    },
+    "menu": {
+        "courses": "Formation",
+        "content": "Contenus",
+        "testimonials": "Avis",
+        "faq": "FAQ"
+    }
+}

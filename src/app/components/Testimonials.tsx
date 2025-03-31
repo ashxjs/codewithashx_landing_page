@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const testimonials = [
@@ -19,16 +20,18 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
+  const t = useTranslations("testimonials");
+
   return (
     <section
       id="avis"
       className="py-20 flex flex-col items-center justify-center"
     >
       <h2 className="pt-3 text-3xl font-bold text-center md:pt-0">
-        Les avis de nos élèves
+        {t("title")}
       </h2>
       <p className="px-3 text-md text-gray-50/50 mt-2 text-center md:text-xl md:px-0">
-        Des dizaines d&apos;apprenants ont déjà transformé leur avenir !
+        {t("description")}
       </p>
 
       <div className="snap-container mt-20 px-6 flex overflow-x-auto snap-x snap-mandatory w-full gap-6 pb-4">
@@ -44,9 +47,11 @@ export default function Testimonials() {
               width={64}
               height={64}
             />
-            <p className="mt-4 text-gray-50/50 font-semibold">{`"${testimonial.text}"`}</p>
+            <p className="mt-4 text-gray-50/50 font-semibold">{`"${t(
+              `testimonials.${index}.text`
+            )}"`}</p>
             <h3 className="mt-3 font-semibold self-start">
-              {testimonial.name}
+              {t(`testimonials.${index}.name`)}
             </h3>
           </div>
         ))}

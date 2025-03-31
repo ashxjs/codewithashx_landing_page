@@ -4,6 +4,8 @@ import { Poppins } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleSchema } from "./components/GoogleSchema";
 import { GoogleAnalytics } from "./components/GoogleAnalytics";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Formation JavaScript en ligne : De débutant à expert en 2025🚀",
@@ -47,18 +49,20 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
   return (
-    <html lang="fr">
+    <html lang={locale}>
       <meta name="next-size-adjust" content="" />
       <GoogleSchema />
       <GoogleAnalytics />
       <body className={`${poppins.className} antialiased`}>
-        {children}
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <SpeedInsights />
       </body>
     </html>

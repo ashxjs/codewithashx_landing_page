@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { Footer } from "./components/Contact";
 import { Content } from "./components/CourseContent/Content";
 import { CTA } from "./components/CTA";
@@ -10,15 +11,15 @@ import Testimonials from "./components/Testimonials";
 
 const links = [
   {
-    label: "Formation",
+    label: "courses",
     href: "#formation",
   },
   {
-    label: "Contenus",
+    label: "content",
     href: "#content",
   },
   {
-    label: "Avis",
+    label: "testimonials",
     href: "#avis",
   },
   // {
@@ -26,15 +27,22 @@ const links = [
   //   href: "#pricing",
   // },
   {
-    label: "FAQ",
+    label: "faq",
     href: "#faq",
   },
 ];
 
 export default function HomePage() {
+  const t = useTranslations("menu");
+
+  const tradLinks = links.map((link) => ({
+    ...link,
+    label: t(link.label),
+  }));
+
   return (
     <>
-      <NavigationMenu links={links} />
+      <NavigationMenu links={tradLinks} />
       <Hero />
       <Features />
       <Content />

@@ -19,7 +19,7 @@ export const Overlay = () => {
   return (
     <div className="block md:hidden fixed bottom-[2dvh] left-[2dvh]">
       {visible ? (
-        <CTAButton href={Routes.Subscriptions} text="Rejoindre" />
+        <CTAButton href={Routes.Subscriptions} text="overlay.CTAButton" />
       ) : null}
     </div>
   );

@@ -7,4 +7,5 @@ export type Module = {
 export type Chapter = {
   title: string;
   order: number;
+  inProgress: boolean;
 };

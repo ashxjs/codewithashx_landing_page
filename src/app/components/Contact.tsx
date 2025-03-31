@@ -2,6 +2,7 @@ import { GithubLogo } from "@/lib/icons/GithubLogo";
 import { InstagramLogo } from "@/lib/icons/InstagramLogo";
 import { LinkedinLogo } from "@/lib/icons/LinkedinLogo";
 import { SocialBtn } from "@/lib/SocialButton";
+import { useTranslations } from "next-intl";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/alexis-hurunghee";
 const GITHUB_URL = "https://github.com/ashxjs";
@@ -11,6 +12,7 @@ const ICON_SIZE = "50px";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations("footer");
 
   return (
     <footer className="flex flex-col justify-center items-center py-10 px-6 gap-4">
@@ -25,7 +27,7 @@ export const Footer = () => {
           <LinkedinLogo color="#FFFFFF" height={ICON_SIZE} width={ICON_SIZE} />
         </SocialBtn>
       </div>
-      <p>{`©${currentYear} - present Code with Ashx`}</p>
+      <p>{t("copyright", { year: currentYear })}</p>
     </footer>
   );
 };
