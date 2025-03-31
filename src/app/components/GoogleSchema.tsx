@@ -57,6 +57,7 @@ const SCHEMA = {
       "@type": "CourseInstance",
       location: "Online",
       courseMode: "Online",
+      courseWorkload: "10 hours",
     },
   ],
 };
