@@ -1,0 +1,187 @@
+{
+    "hero": {
+        "title_1": "Training",
+        "title_2": "Complete JavaScript: From Beginner to ",
+        "title_3": "Expert",
+        "title_4": "in 2025",
+        "description": "Online JavaScript training for beginners and developers. Learn to code and create web, mobile, and server applications with hands-on projects.",
+        "CTAButton": "Access the training 🚀"
+    },
+    "features": {
+        "title": "Why choose this training?",
+        "description": "A structured learning experience accessible to everyone.",
+        "features": {
+            "learning_code": {
+                "icon": "🚀",
+                "title": "Learn to code by practicing",
+                "description": "Each module includes real-world projects to immediately apply what you learn."
+            },
+            "lifetime_access": {
+                "icon": "🔒",
+                "title": "Lifetime access",
+                "description": "Once enrolled, you will have unlimited access to the training."
+            },
+            "one_language_three_apps": {
+                "icon": "🎓",
+                "title": "1 language, 3 types of applications",
+                "description": "With JavaScript, you can create web, mobile, and server applications."
+            }
+        }
+    },
+    "content": {
+        "title": "Training Content",
+        "modules": {
+            "1": {
+                "title": "Introduction",
+                "chapters": {
+                    "0": {
+                        "title": "Introduction",
+                        "description": "Introduction to the training and JavaScript"
+                    },
+                    "1": {
+                        "title": "Variables",
+                        "description": "Introduction to variables and data types"
+                    },
+                    "2": {
+                        "title": "Numbers",
+                        "description": "Introduction to numbers and mathematical operations"
+                    },
+                    "3": {
+                        "title": "Strings",
+                        "description": "Introduction to strings and manipulation operations"
+                    },
+                    "4": {
+                        "title": "Conditions",
+                        "description": "Introduction to conditions and control structures"
+                    },
+                    "5": {
+                        "title": "Arrays",
+                        "description": "Introduction to arrays and data structures"
+                    },
+                    "6": {
+                        "title": "Functions",
+                        "description": "Introduction to functions"
+                    },
+                    "7": {
+                        "title": "Quiz - Validate your knowledge!",
+                        "description": "Quiz to validate your knowledge"
+                    },
+                    "8": {
+                        "title": "Project 1 - Create a 2D game map",
+                        "description": "Create a 2D game map using JavaScript"
+                    }
+                }
+            },
+            "2": {
+                "title": "Objects",
+                "chapters": {
+                    "8": {
+                        "title": "Objects",
+                        "description": "Introduction to objects and data structures"
+                    },
+                    "9": {
+                        "title": "OOP",
+                        "description": "Introduction to Object-Oriented Programming"
+                    },
+                    "10": {
+                        "title": "Advanced OOP",
+                        "description": "Advanced Object-Oriented Programming"
+                    },
+                    "11": {
+                        "title": "Some practice",
+                        "description": "Some practice with OOP"
+                    }
+                }
+            },
+            "3": {
+                "title": "The Web",
+                "chapters": {
+                    "12": {
+                        "title": "How does it work?",
+                        "description": "Introduction to the Web"
+                    },
+                    "13": {
+                        "title": "HTML",
+                        "description": "Introduction to HTML"
+                    },
+                    "14": {
+                        "title": "CSS",
+                        "description": "Introduction to CSS"
+                    },
+                    "15": {
+                        "title": "DOM",
+                        "description": "Introduction to the DOM"
+                    },
+                    "16": {
+                        "title": "Manipulating the DOM with JavaScript",
+                        "description": "Manipulating the DOM with JavaScript"
+                    },
+                    "17": {
+                        "title": "Create your first e-commerce website",
+                        "description": "Create your first e-commerce website"
+                    }
+                }
+            }
+        }
+    },
+    "testimonials": {
+        "title": "Student Reviews",
+        "description": "Dozens of learners have already transformed their future!",
+        "testimonials": {
+            "0": {
+                "name": "Veechal R.",
+                "text": "This training allowed me to learn the basics of programming with JavaScript, I 100% recommend it!"
+            },
+            "1": {
+                "name": "Léana H.",
+                "text": "Thanks to this JavaScript training, I mastered the basics of programming and developed my own website!"
+            },
+            "2": {
+                "name": "Florent D.",
+                "text": "This training helped me create and launch my first e-commerce site with JavaScript"
+            }
+        }
+    },
+    "overlay": {
+        "CTAButton": "Join"
+    },
+    "CTA": {
+        "title": "Join the training today!",
+        "description": "Sign up now for our complete JavaScript training and enjoy free access for the first 50 enrollees!",
+        "CTAButton": "Access the training 🚀"
+    },
+    "FAQ": {
+        "title": "Frequently Asked Questions",
+        "questions": {
+            "0": {
+                "question": "Is the JavaScript training suitable for my level?",
+                "answer": "Yes, absolutely! This training is designed for beginners who want to learn coding with JavaScript."
+            },
+            "1": {
+                "question": "How long do I have access to the JavaScript training?",
+                "answer": "You will have lifetime access to the training! No time limits ⏳, you can learn at your own pace and revisit the lessons as often as you like."
+            },
+            "2": {
+                "question": "Are practical projects included in the JavaScript training?",
+                "answer": "Yes, at the end of each module, you will complete a quiz and a project! They will help you validate all the concepts covered in the module."
+            },
+            "3": {
+                "question": "Is the JavaScript training eligible for CPF?",
+                "answer": "Not yet, but maybe in the future!"
+            },
+            "4": {
+                "question": "What tools are needed to follow the JavaScript training?",
+                "answer": "We will only use free tools, such as Visual Studio Code, Git, GitHub, and Node.js."
+            }
+        }
+    },
+    "footer": {
+        "copyright": "©{year} - present Code with Ashx"
+    },
+    "menu": {
+        "courses": "Training",
+        "content": "Content",
+        "testimonials": "Reviews",
+        "faq": "FAQ"
+    }
+}
